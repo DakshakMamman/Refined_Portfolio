@@ -494,10 +494,39 @@ textarea {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   border-top: 1px solid var(--line);
   padding: 2rem 0 3rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-links i {
+  font-size: 1.15rem;
+}
+
+.social-links a:hover {
+  color: var(--accent);
 }
 
 @media (max-width: 760px) {
@@ -510,7 +539,7 @@ footer {
     padding: 1.25rem 0;
   }
 
-  nav a {
+  header.top nav a {
     display: none;
   }
 
@@ -541,6 +570,11 @@ footer {
 
   section {
     padding: 3.5rem 0;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .skill {
