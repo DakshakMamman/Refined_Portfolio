@@ -239,6 +239,7 @@ nav a:hover {
 .profile-mark {
   display: grid;
   place-items: center;
+  overflow: hidden;
   width: 7.5rem;
   height: 7.5rem;
   margin: 2.5rem auto 1.5rem;
@@ -249,6 +250,15 @@ nav a:hover {
   box-shadow: 0 15px 35px rgba(49, 87, 232, 0.22);
   font-size: 2.2rem;
   font-weight: 800;
+}
+
+.profile-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-card h2 {
