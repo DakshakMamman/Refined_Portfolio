@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lere Dakshak Mamman – Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>L. D. Mamman</strong>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Available for opportunities</span>
+        <h1>Lere Dakshak Mamman</h1>
+        <p>I build clean, responsive websites with <strong>HTML, CSS, Tailwind and JavaScript</strong>, and I’m growing my Python skills.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">Explore my work <span aria-hidden="true">→</span></a>
+          <a class="btn alt" href="#contact">Get in touch</a>
+          <a class="btn alt" href="https://github.com/DakshakMamman" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Developer profile summary">
+        <span class="card-label">Profile</span>
+        <div class="profile-mark">LM</div>
+        <h2>Front-end Developer</h2>
+        <p>Turning ideas into fast, accessible and memorable web experiences.</p>
+        <div class="hero-stack" aria-label="Main technologies">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about">
+        <div>
+          <p>I’m a front-end developer who enjoys turning ideas into fast, readable and accessible web pages. I write semantic HTML, style it with vanilla CSS or Tailwind, and add behaviour with JavaScript.</p>
+          <p>Right now I’m learning Python for scripting and automation, and I’m looking for opportunities to build real products with a team.</p>
+        </div>
+        <ul class="facts">
+          <li><b>Focus</b>Front-end development</li>
+          <li><b>Daily tools</b>HTML, CSS, Tailwind CSS, JavaScript</li>
+          <li><b>Learning</b>Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="sub">Select a skill to highlight the projects that use it. Select it again to clear.</p>
+      <div class="chips" id="chips" role="group" aria-label="Filter projects by skill"></div>
+      <div class="skills" id="skills-list"></div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="sub">A few things I’ve built and the tools behind them.</p>
+      <div class="grid" id="grid"></div>
+      <p class="note">These are sample entries. Edit the <code>projects</code> list in the script to add your own titles, descriptions and links.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="sub">Have a project or a role in mind? Send me a message and your email app will open with it ready to send.</p>
+      <form id="form" novalidate>
+        <label>Your name<input id="name" name="name" autocomplete="name" required></label>
+        <label>Your email<input id="email" name="email" type="email" autocomplete="email" required></label>
+        <label>Message<textarea id="msg" name="msg" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <div id="status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Lere Dakshak Mamman · <a href="https://github.com/DakshakMamman" target="_blank" rel="noopener noreferrer">GitHub</a></footer>
+</div>
+</body>
+</html>
